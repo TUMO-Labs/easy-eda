@@ -1,22 +1,21 @@
-# LED Push Button PCB
+# LED Push Button PCB for Arduino UNO R3
 
 ## Overview
 
-This project is a simple PCB circuit that lights up an LED when a push button is pressed. It is designed for educational purposes, prototyping, and basic electronics testing.
+This project is a simple PCB circuit designed to light up an LED when a push button is pressed. The board is powered by an Arduino UNO (or compatible) via the +5V and GND pins.
 
 ## Features
 
-- **LED Indicator:** Lights up when the button is pressed.
+- **LED Indicator:** Lights up only when the button is pressed.
 - **Push Button:** Momentary tactile switch for user input.
 - **Current Limiting Resistor:** Protects the LED from excessive current.
-- **Power Input:** Operates from a +5V power supply.
+- **Arduino Power Input:** Uses +5V and GND from Arduino UNO header.
 
 ## Schematic Description
 
-- **LED:** Connected in series with a resistor and push button.
-- **Resistor (R1):** 1kΩ, limits current to the LED.
-- **Push Button (SW1):** 6x6mm tactile switch, closes the circuit when pressed.
-- **Power:** +5V and GND are used as power rails.
+- **LED** and **resistor** are connected in series.
+- **Push button** is placed in series with the LED and resistor, so pressing the button completes the circuit.
+- **Power** is supplied from Arduino UNO header (+5V and GND).
 
 ## Components
 
@@ -25,8 +24,7 @@ This project is a simple PCB circuit that lights up an LED when a push button is
 | LED1      | LED     | Red LED (0603 SMD)    |
 | R1        | 1kΩ     | Resistor (0603 SMD)   |
 | SW1       | Button  | Tactile Switch 6x6mm  |
-| +5V       |         | Power Supply          |
-| GND       |         | Ground                |
+| P1        | UNO_R3  | Arduino UNO header    |
 
 ## How It Works
 
@@ -35,14 +33,14 @@ This project is a simple PCB circuit that lights up an LED when a push button is
 
 ## Usage
 
-1. Connect the PCB to a +5V power supply.
+1. Connect the PCB to the Arduino UNO header (matching +5V and GND).
 2. Press the push button to light up the LED.
 3. Release the button to turn off the LED.
 
 ## Design Files
 
-- Schematic: `SCH_led+button_2026-04-27.json`
-- PCB Layout: `PCB_PCB_led+button_2026-04-27.json`
+- Schematic: `SCH_led+button_2026-04-28.json`
+- PCB Layout: `PCB_PCB_led+button_2_2026-04-28.json`
 
 ## Assembly Notes
 
@@ -53,5 +51,3 @@ This project is a simple PCB circuit that lights up an LED when a push button is
 ## License
 
 This project is open-source and free to use for educational and personal purposes.
-
----
