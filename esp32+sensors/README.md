@@ -1,0 +1,2 @@
+This project is a modular environmental monitoring station based on the ESP32 DevKitC.
+It measures air quality using the PMS5003 (UART) and BME280 (I2C) sensors, and stores data on a MicroSD card (SPI).
