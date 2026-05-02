@@ -12,3 +12,6 @@ Notes:
 - Use the designators above when populating the PCB or ordering parts.
 This project is a modular environmental monitoring station based on the ESP32 DevKitC.
 It measures air quality using the PMS5003 (UART) and BME280 (I2C) sensors, and stores data on a MicroSD card (SPI).
+
+
+![alt text](<Screenshot 2026-05-02 at 20.43.09.png>)
